@@ -28,6 +28,16 @@
 (when window-system (global-hl-line-mode t))
 (set-face-background hl-line-face "gray13")
 
+(use-package symon
+  :ensure t
+  :bind
+  ("s-h" . symon-mode))
+
+(use-package beacon
+  :ensure t
+  :config
+  (beacon-mode 1))
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (global-set-key (kbd "<s-return>") 'ansi-term)

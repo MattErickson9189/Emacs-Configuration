@@ -1,10 +1,15 @@
 ;; Matt's emacs init file
 
+(setq package-check-signature nil)
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives
-	     '(("melpa" . "https://melpa.org/packages/")
-	       ("gnu" . "http://elpa.gnu.org/packages/")))
+	     '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives
+	     '("gnu" . "http://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives
+	     '("ELPA" . "http://tromey.com/elpa/"))
+
 (package-initialize)
 
 
@@ -32,7 +37,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (smex ido-vertical-mode org-bullets beacon spacemacs-theme which-key use-package))))
+    (symon smex ido-vertical-mode org-bullets beacon spacemacs-theme which-key use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
