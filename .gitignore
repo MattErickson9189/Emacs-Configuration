@@ -1,2 +1,4 @@
-!init.el
-!config.org
+*~
+*/
+smex*
+ido*
