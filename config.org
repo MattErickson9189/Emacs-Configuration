@@ -101,3 +101,12 @@
     :bind
     ("M-x" . smex))
 #+END_SRC
+** switch buffer
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
+#+END_SRC
+* Buffer
+** enable ibuffer
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x b") 'ibuffer)
+#+END_SRC

@@ -58,3 +58,7 @@
   :init (smex-initialize)
   :bind
   ("M-x" . smex))
+
+(global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
+
+(global-set-key (kbd "C-x b") 'ibuffer)
