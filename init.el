@@ -37,7 +37,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (symon smex ido-vertical-mode org-bullets beacon spacemacs-theme which-key use-package))))
+    (rainbow-mode avy symon smex ido-vertical-mode org-bullets beacon spacemacs-theme which-key use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -62,3 +62,22 @@
 (global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
 
 (global-set-key (kbd "C-x b") 'ibuffer)
+
+(use-package avy
+  :ensure t
+  :bind
+  ("M-s" . avy-goto-char))
+
+(defun config-visit()
+  (interactive)
+  (find-file "~/.emacs.d/config.org"))
+(global-set-key (kbd "C-c e") 'config-visit)
+
+(defun config-reload()
+  (interactive)
+  (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
+(global-set-key (kbd "C-c r") 'config-reload)
+
+(use-package rainbow-mode
+  :ensure t
+  :init (rainbow-mode 1))
